@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Online Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #0f172a;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #2563eb, #1e40af);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .hero button {
+            padding: 12px 30px;
+            font-size: 16px;
+            background-color: white;
+            color: #1e40af;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #e5e7eb;
+        }
+
+        .products {
+            padding: 50px 40px;
+        }
+
+        .products h3 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .card h4 {
+            margin: 15px 0 10px;
+            font-size: 20px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #2563eb;
+            margin: 10px 0;
+        }
+
+        .card button {
+            padding: 10px 20px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #1e40af;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ShopEase</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Cart</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Upgrade Your Shopping Experience</h2>
+    <p>Discover premium products at unbeatable prices</p>
+    <button>Shop Now</button>
+</section>
+
+<section class="products">
+    <h3>Featured Products</h3>
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Product">
+            <h4>Smart Watch</h4>
+            <p>Stylish and modern smartwatch</p>
+            <div class="price">₹4,999</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Product">
+            <h4>Wireless Headphones</h4>
+            <p>Noise cancelling premium sound</p>
+            <div class="price">₹2,999</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Product">
+            <h4>Running Shoes</h4>
+            <p>Comfortable & durable sports shoes</p>
+            <div class="price">₹3,499</div>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 ShopEase. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
